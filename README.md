@@ -58,9 +58,8 @@ The FPGA allows us to create a hardware module to generate PWM signals efficient
 ## Technologies Used
 <a name="technologies-used"></a>
 
-* [![Verilog][Verilog-shield]][Verilog-url]
+* [![Xilinx Vivado][Xilinx-Vivado-shield]][Xilinx-Vivado-url]
 * [![Effinity FPGA][Effinity-shield]][Effinity-url]
-* [![Quartus][Quartus-shield]][Quartus-url]
 * [![PWM][PWM-shield]][PWM-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -105,14 +104,15 @@ For any questions, feel free to reach out to me via email at sal.hndrx@gmail.com
 <p align="right">(<a href="#readme-top">back to top</a>)</p> 
 <!-- MARKDOWN LINKS & IMAGES -->
 
+[Xilinx-Vivado-shield]: https://img.shields.io/badge/Xilinx_Vivado-F75C03?style=for-the-badge&logo=xilinx&logoColor=white
+[Xilinx-Vivado-url]: https://www.xilinx.com/products/design-tools/vivado.html
+
+
 [VHDL-shield]: https://img.shields.io/badge/VHDL-4B0082?style=for-the-badge
 [VHDL-url]: https://en.wikipedia.org/wiki/VHDL
 
 [Effinity-shield]: https://img.shields.io/badge/effinity-FPGA-green?style=for-the-badge
 [Effinity-url]: https://www.effinity.com/
-
-[Quartus-shield]: https://img.shields.io/badge/Quartus-00979D?style=for-the-badge&logo=quartus&logoColor=white
-[Quartus-url]: https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/overview.html
 
 [PWM-shield]: https://img.shields.io/badge/PWM-FFA500?style=for-the-badge
 [PWM-url]: https://en.wikipedia.org/wiki/Pulse-width_modulation
