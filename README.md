@@ -104,8 +104,9 @@ For any questions, feel free to reach out to me via email at sal.hndrx@gmail.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> 
 <!-- MARKDOWN LINKS & IMAGES -->
-[Verilog-shield]: https://img.shields.io/badge/verilog-0057A0?style=for-the-badge&logo=verilog&logoColor=white
-[Verilog-url]: https://www.verilog.com/
+
+[VHDL-shield]: https://img.shields.io/badge/VHDL-4B0082?style=for-the-badge
+[VHDL-url]: https://en.wikipedia.org/wiki/VHDL
 
 [Effinity-shield]: https://img.shields.io/badge/effinity-FPGA-green?style=for-the-badge
 [Effinity-url]: https://www.effinity.com/
