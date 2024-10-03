@@ -1,1 +1,70 @@
 
+module led_pwm_controller(
+    input clk,             // System clock
+    input btn_increase,    // Button to increase brightness
+    input btn_decrease,    // Button to decrease brightness
+    output reg led         // LED output
+);
+//How bright can we go?
+parameter PWM_MAX = 255 //2^n -1
+parameter DEBOUNCE_MAX = 1023 //arbitrary number for max debounce value
+//reg
+reg [7:0] pwm_counter = 0; //keep it to 8 bits, hence 255 
+reg [7:0] duty_cycle = 0; 
+reg [9:0] debounce_counter = 0;
+reg btn_increase_debounce = 0; //increase signal
+reg btn_decrease_debounce = 0; 
+// PWM Counter
+always @(posedge clk)
+	begin
+    		pwm_counter <= pwm_counter + 1'b1;
+    		led <= (pwm_counter < duty_cycle) ? 1'b1 : 1'b0; // Control LED based on duty cycle
+	end
+// Debounce Logic for Increase
+always @(posedge clk)
+	begin
+    		if (btn_increase == 1'b1)
+		begin
+        		if (debounce_counter < DEBOUNCE_MAX)
+			begin
+            			debounce_counter <= debounce_counter + 1'b1;
+        		end else
+			begin
+            			btn_increase_debounced <= 1'b1;
+        		end
+    		end else
+			begin
+        			debounce_counter <= 0;
+        			btn_increase_debounced <= 0;
+    			end
+		end
+// Debounce Logic for Decrease Button
+always @(posedge clk)
+	begin
+    		if (btn_decrease == 1'b1)
+			begin
+        			if (debounce_counter < DEBOUNCE_MAX)
+			 		begin
+            				debounce_counter <= debounce_counter + 1'b1;
+        	end else
+			begin
+            			btn_decrease_debounced <= 1'b1;
+        		end
+    		end else
+			 begin
+        			debounce_counter <= 0;
+        			btn_decrease_debounced <= 0;
+    			end
+	end
+// Duty Cycle Adjustment
+always @(posedge clk)
+begin
+    if (btn_increase_debounced && duty_cycle <= PWM_MAX - PWM_MAX/10) begin
+        duty_cycle <= duty_cycle + PWM_MAX/10; // Increase duty cycle by 10%
+    end
+    if (btn_decrease_debounced && duty_cycle >= PWM_MAX/10) begin
+        duty_cycle <= duty_cycle - PWM_MAX/10; // Decrease duty cycle by 10%
+    end
+end
+endmodule
+
