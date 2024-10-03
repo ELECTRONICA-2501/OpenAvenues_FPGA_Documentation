@@ -86,3 +86,23 @@ module pwm_controller (
     counter <= counter + 1;
   end
 endmodule
+```
+This Verilog code implements a simple PWM controller that modulates an LED's brightness based on the input duty cycle. The counter compares its value to the duty cycle to determine when to turn the LED on or off.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- ACKNOWLEDGEMENTS -->
+Acknowledgements
+<a name="acknowledgements"></a>
+
+I would like to thank my team members and mentor, Boyun Wang, and Open Avenues for this Micro Internship opportunity and for their guidance and support throughout this project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> <!-- CONTACT -->
+Contact
+<a name="contact"></a>
+
+For any questions, feel free to reach out to me via email at sal.hndrx@gmail.com.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> <!-- MARKDOWN LINKS & IMAGES -->
+
+
+
