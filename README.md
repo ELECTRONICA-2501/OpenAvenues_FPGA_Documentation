@@ -27,6 +27,7 @@
 <a name="project-overview"></a>
 
 During my research internship co-op, I worked on a project using an Effinity-based FPGA to control the brightness of an array of LEDs. The project involved implementing two different methods to modulate LED brightness: Pulse Width Modulation (PWM) and Pulse Frequency Modulation (PFM). I focused on using the PWM approach to control the LEDs' brightness levels.
+![FPGA_Board](image/EfinityFPGABoard.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
