@@ -102,7 +102,18 @@ Contact
 
 For any questions, feel free to reach out to me via email at sal.hndrx@gmail.com.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> <!-- MARKDOWN LINKS & IMAGES -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
+<!-- MARKDOWN LINKS & IMAGES -->
+[Verilog-shield]: https://img.shields.io/badge/verilog-0057A0?style=for-the-badge&logo=verilog&logoColor=white
+[Verilog-url]: https://www.verilog.com/
 
+[Effinity-shield]: https://img.shields.io/badge/effinity-FPGA-green?style=for-the-badge
+[Effinity-url]: https://www.effinity.com/
+
+[Quartus-shield]: https://img.shields.io/badge/Quartus-00979D?style=for-the-badge&logo=quartus&logoColor=white
+[Quartus-url]: https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/overview.html
+
+[PWM-shield]: https://img.shields.io/badge/PWM-FFA500?style=for-the-badge
+[PWM-url]: https://en.wikipedia.org/wiki/Pulse-width_modulation
 
 
